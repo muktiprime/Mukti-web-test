@@ -1,0 +1,29 @@
+a:hover {
+  color: gray;
+}
+.btnssidebar {
+  color: white;
+  background-color: rgb(12, 0, 0);
+  padding: 12px;
+  border: 1px solid black;
+  margin: 20px;
+  position: fixed;
+  bottom: 10px;
+}
+.btnssidebar:hover {
+  background-color: rgba(14, 0, 0, 0.158);
+  border: 1px solid black;
+  color: white;
+}
+
+.iconsidebar {
+  margin-right: 5px;
+  margin-top: -1px;
+}
+@media screen and (max-width: 1200px) {
+  .btnssidebar {
+    position: static;
+    background-color: rgb(12, 0, 0);
+    padding: 8px;
+  }
+}

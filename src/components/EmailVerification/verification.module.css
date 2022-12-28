@@ -1,0 +1,76 @@
+.box1 {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  margin-top: 20%;
+  padding: 25px;
+}
+
+.iconss {
+  color: maroon;
+  font-size: 55px;
+}
+.iconssG {
+  font-size: 50px;
+  color: green;
+}
+.rounded {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  color: #f15e5e;
+  font-size: 40px;
+  display: inline-block;
+  margin-top: 13px;
+  text-align: center;
+  border: 3px solid maroon;
+}
+
+@media screen and (max-width: 800px) {
+  .iconss {
+    color: maroon;
+    font-size: 55px;
+  }
+  .box1 {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 10%;
+    padding: 25px;
+  }
+
+  .roundedG {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: green;
+    font-size: 35px;
+    display: inline-block;
+    margin-top: 25px;
+    text-align: center;
+    border: 3px solid green;
+  }
+
+  .iconssG {
+    font-size: 50px;
+
+    color: green;
+  }
+}
+
+.roundedG {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  color: green;
+  font-size: 35px;
+  display: inline-block;
+  margin-top: 13px;
+  text-align: center;
+  border: 3px solid green;
+}

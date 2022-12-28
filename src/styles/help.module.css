@@ -1,0 +1,16 @@
+.top_section {
+  background-color: #f2f4f6;
+  border-bottom: 1px solid #c4cacf;
+  box-sizing: border-box;
+  padding: 12px 0;
+  font-size: 21px;
+  line-height: 20px;
+}
+.top_heading {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 48px;
+  box-sizing: border-box;
+  color: black;
+}

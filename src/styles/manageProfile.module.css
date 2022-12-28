@@ -1,0 +1,29 @@
+.box {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.heading {
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+}
+
+.icon {
+  width: 150px;
+  margin: 10px;
+  color: whitesmoke;
+}
+
+.icon:hover {
+  color: white;
+}
+
+.title {
+  text-align: center;
+  color: whitesmoke;
+}
+.title:hover {
+  color: white;
+}

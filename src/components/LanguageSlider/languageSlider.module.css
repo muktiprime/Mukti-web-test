@@ -1,0 +1,131 @@
+.heads {
+  color: azure;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 4%;
+}
+.headingBanner {
+  color: white;
+  font-weight: 600;
+  font-size: 19px;
+  margin-left: 6%;
+  display: flex;
+  justify-content: space-between;
+}
+.carou {
+  width: 215px;
+  height: 230px;
+  margin-left: 5px;
+  margin-top: 15px;
+  background-size: contain;
+  padding-top: 5px;
+}
+.carouCont {
+  width: 215px;
+  height: 230px;
+  margin-left: 5px;
+  margin-top: 15px;
+  background-size: contain;
+  padding-top: 5px;
+}
+.carou :hover {
+  cursor: pointer;
+}
+.carouCont :hover {
+  cursor: pointer;
+}
+.contentSec {
+  position: absolute;
+  bottom: 5%;
+  left: 8px;
+  right: 8px;
+  overflow: hidden;
+  padding: 0;
+  white-space: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  /* -webkit-font-smoothing: antialiased; */
+  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.35);
+  color: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  color: red !important;
+  background-color: blue !important;
+  font-size: 300px !important;
+}
+.imagCont {
+  width: 100%;
+}
+.imag {
+  width: 100%;
+  /* height: 226px; */
+}
+@media screen and (max-width: 800px) {
+  .imag {
+    width: 100%;
+    /* height: 170px; */
+  }
+  .imagCont {
+    width: 100%;
+    height: 95px;
+  }
+  .carouCont {
+    width: 145px;
+    height: 150px;
+  }
+  .carou {
+    width: 145px;
+    height: 150px;
+  }
+
+  .content .cutAction {
+    position: absolute;
+    bottom: 73%;
+    left: 2%;
+    /* top: 1%; */
+    display: none;
+    font-size: 22px;
+
+    color: black;
+  }
+  .contentSec {
+    position: absolute;
+    bottom: 5px;
+    left: 8px;
+    right: 8px;
+    overflow: hidden;
+    padding: 0;
+    white-space: normal;
+    font-size: 15px;
+    line-height: 24px;
+    /* -webkit-font-smoothing: antialiased; */
+    text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.35);
+    color: #fff;
+  }
+}
+.content {
+  position: relative;
+}
+
+.content .cutAction {
+  position: absolute;
+  /* top: 1; */
+  bottom: 72%;
+  left: 1%;
+  display: none;
+  font-size: 25px;
+
+  color: black;
+}
+
+.content :hover > .cutAction {
+  display: block;
+  z-index: 1111 !important;
+}
+
+.cutAction:hover {
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,91 @@
+.form {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 60px;
+  margin: 30px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  width: 750px;
+  margin: 0 auto;
+}
+
+@media (max-width: 770px) {
+  .form {
+    width: 300px;
+  }
+}
+
+.form > div {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0 20px;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* .form > div > img {
+  filter: invert(1);
+  width: 7vmax;
+} */
+
+.receipt {
+  filter: invert(1);
+  font-size: 75px !important;
+}
+@media (max-width: 800px) {
+  .receipt {
+    font-size: 45px !important;
+  }
+}
+
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input_area {
+  margin: 20px;
+  outline: none;
+  background-color: transparent;
+  margin: 12px;
+  padding: 10px 20px;
+  border: 2px solid gray;
+  border-radius: 50px;
+  color: #ccc;
+  width: 45%;
+}
+.input_area:focus {
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+@media (max-width: 800px) {
+  .input_area {
+    width: auto;
+    border: 1px solid gray;
+  }
+  .input_area:focus {
+    border: 1px solid #ccc;
+    font-weight: 300;
+  }
+}
+
+.button {
+  width: 110px;
+  background-color: #ccc;
+  color: black;
+  border: 1px solid #ccc;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: ghostwhite;
+}

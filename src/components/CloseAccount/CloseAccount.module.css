@@ -1,0 +1,27 @@
+.sections {
+  color: white;
+  margin-left: 25%;
+}
+
+.card00 {
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid #d1aa1d;
+  margin-top: 20px;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.2),
+    0 6px 20px 0 rgba(29, 29, 29, 0.19);
+}
+@media screen and (max-width: 800px) {
+  .sections {
+    margin-left: 0%;
+  }
+
+  .rst {
+    margin-left: 5%;
+  }
+  .card00 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,182 @@
+.outerLayer {
+  margin: 1% 3% 1% 3%;
+  padding: 1vw;
+}
+
+.innerLayer {
+  margin-top: 5px;
+  background-color: #1c2935;
+  color: white;
+  width: 100%;
+  height: 200px;
+}
+.imageSection {
+  float: left;
+  width: 22%;
+}
+.imgClass {
+  width: 95%;
+  height: 200px;
+}
+.middleSection {
+  float: left;
+  width: 58%;
+}
+.upperlayer1 {
+  margin-top: 10px;
+  float: left;
+  width: 50px;
+}
+
+.upperlayer2 {
+  margin-top: 20px;
+  margin-left: 0;
+  float: left;
+  width: 88%;
+}
+.logoCover {
+  width: 100%;
+}
+.logoImg {
+  width: 44px;
+  cursor: pointer;
+}
+.title {
+  width: 100%;
+}
+.description {
+  width: 100%;
+  float: left;
+}
+.descriptionTitle {
+  font-size: 18px;
+  margin-top: 12px;
+  color: rgb(129, 151, 164);
+}
+.episodeTitle {
+  font-size: 18px;
+}
+.lastSection {
+  float: left;
+  margin-top: 5px;
+  width: 20%;
+}
+.data {
+  margin-left: 25%;
+  color: rgb(129, 151, 164);
+  margin-top: 3%;
+}
+.dataA {
+  margin-left: 25%;
+  border: 1px solid rgb(129, 151, 164);
+  width: 8%;
+  line-height: 20px;
+  padding-left: 1%;
+  color: rgb(129, 151, 164);
+  margin-top: 3%;
+}
+.dataSubtitle {
+  margin-left: 25%;
+  color: rgb(121, 184, 243);
+  margin-top: 3%;
+}
+
+/* 
+//EpisodeResponsive css */
+
+@media screen and (max-width: 800px) {
+  .upperlayer2 {
+    margin-top: 0px;
+  }
+  .innerLayer {
+    margin-top: 5px;
+    background-color: #1c2935;
+    color: white;
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+
+  .imageSection {
+    float: left;
+    margin: 0;
+    width: 100%;
+  }
+  .imgClass {
+    width: 100%;
+    height: 185px;
+  }
+  .middleSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .upperlayer1 {
+    margin-top: 4%;
+    float: left;
+    width: 22%;
+  }
+
+  .upperlayer2 {
+    width: 75%;
+  }
+  .logoCover {
+    margin-top: -18%;
+    margin-left: 5px;
+    width: 75%;
+  }
+  .logoImg {
+    width: 100%;
+    margin-left: 5%;
+    cursor: pointer;
+  }
+  .title {
+    width: 100%;
+  }
+  .description {
+    margin-left: 3%;
+    width: 90%;
+  }
+  .descriptionTitle {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: rgb(129, 151, 164);
+  }
+  .episodeTitle {
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0px;
+  }
+  .lastSection {
+    float: left;
+    margin-top: 0;
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .data {
+    margin-left: 0;
+    font-size: 13px;
+    color: rgb(129, 151, 164);
+    margin-top: 5px;
+  }
+  .dataA {
+    margin-left: 0%;
+    border: 1px solid rgb(129, 151, 164);
+    width: 15%;
+    line-height: 15px;
+    font-size: 15px;
+    padding-left: 2%;
+    color: rgb(129, 151, 164);
+    margin-top: 3%;
+  }
+  .dataSubtitle {
+    margin-left: 0;
+    font-size: 13px;
+    color: rgb(121, 184, 243);
+    margin-top: 5px;
+  }
+}

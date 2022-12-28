@@ -1,0 +1,251 @@
+/* @media screen and (max-width: 800px) {
+  .forgot {
+    overflow-x: hidden;
+  }
+} */
+.forgot__bg {
+  min-height: 100%;
+  min-width: 1024px;
+  filter: brightness(65%);
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 800px) {
+  .forgot__bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+.forgot__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  .forgot__container {
+    width: 100%;
+  }
+}
+.forgot__shadow {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  margin-top: 110px;
+  height: auto;
+  width: 390px;
+  position: absolute;
+  top: 0;
+}
+@media screen and (max-width: 800px) {
+  .forgot__shadow {
+    margin-top: 150px;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+.forgot__title {
+  margin-top: 25px;
+  margin-bottom: 13px;
+  font-size: 1.6rem;
+  text-align: center;
+
+  color: white;
+}
+.forgot__btn_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.forgot__btn {
+  width: 70%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 22px 0 22px;
+  font-size: 14.5px;
+  background-color: red;
+  font-weight: 600;
+  font-family: helvetica;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.forgot__google_icon {
+  font-size: 1.2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.forgot__option {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.forgot__option_newuser {
+  color: #737373;
+  text-align: center;
+  margin-right: 5px;
+}
+.forgot__option_link {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.forgot__option_link:hover {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+.user_forgot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.forgot_password {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.forgot_password:hover {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.group .form_input {
+  background: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 10px 10px 7px;
+  display: block;
+  width: 70%;
+  border: none;
+  border-radius: 3px;
+  margin: 15px 0;
+}
+.group .form_input:focus {
+  outline: none;
+}
+.group .form_input ~ .form_input_label {
+  top: -10px;
+  left: 60px;
+  font-size: 12px;
+  color: white;
+}
+.group input[type="password"] {
+  letter-spacing: 0.3em;
+}
+.group .form_input_label {
+  color: #737373;
+  opacity: 1;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  top: -10px;
+  left: 60px;
+  transition: 300ms ease all;
+}
+.group .form_input_label.shrink {
+  top: -10px;
+  left: 60px;
+  font-size: 12px;
+  color: white;
+}
+
+.custom_button {
+  min-width: 130px;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 22px 0 22px;
+  font-size: 14.5px;
+  background-color: #e50914;
+  font-weight: 600;
+  font-family: helvetica;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.custom_button:hover {
+  transform: translateY(-2px);
+}
+.custom_button:active {
+  transform: translateY(-1px);
+}
+.custom_button.signin {
+  background-color: #fff;
+  color: black;
+}
+.custom_button.signin:hover {
+  border: none;
+}
+.custom_button .custom_button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* SAMRAT EDIT */
+.forgot {
+  width: 80%;
+  position: relative;
+  float: right;
+}
+
+.forgot__shadow {
+  width: 60%;
+  padding: 30px;
+}
+.group .form_input {
+  width: 100%;
+}
+.group .form_input ~ .form_input_label {
+  left: 0px;
+}
+.forgot__btn {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .forgot__shadow {
+    width: 75%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .forgot__shadow {
+    margin-top: 30px;
+    width: 83%;
+  }
+}
+
+@media (max-width: 767px) {
+  .forgot__title {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .forgot {
+    margin: 0px auto;
+    float: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,219 @@
+.new {
+  color: red;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.number {
+  font-weight: 900;
+  font-size: 17vmax;
+  line-height: 1;
+  color: #293b49;
+}
+
+.illustration {
+  position: relative;
+  width: 14vmax;
+  margin: 0 2.5vmax;
+}
+
+.circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 14vmax;
+  height: 13vmax;
+  border-radius: 50%;
+  background-color: #293b49;
+}
+
+.clip {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  width: 14vmax;
+  height: 15vmax;
+  border-radius: 0 0 50% 50%;
+}
+
+.paper {
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10vmax;
+  height: 15vmax;
+  border: 0.4vmax solid #293b49;
+  background-color: white;
+  border-radius: 0.8rem;
+}
+
+.paper::before {
+  content: "";
+  position: absolute;
+  top: -0.8vmax;
+  right: -0.8vmax;
+  width: 1.8vmax;
+  height: 1.4vmax;
+  background-color: white;
+  border-bottom: 0.4vmax solid #293b49;
+  transform: rotate(45deg);
+}
+
+.face {
+  position: relative;
+  margin-top: 2.4vmax;
+}
+
+.eyes {
+  position: absolute;
+  top: 0;
+  left: 2.3vmax;
+  width: 5vmax;
+  height: 1vmax;
+}
+
+.eye_eye_left {
+  position: absolute;
+  bottom: 0;
+  width: 1vmax;
+  height: 0.9vmax;
+  border-radius: 50%;
+  background-color: #293b49;
+  animation-name: eye;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  left: 0;
+}
+
+.eye_eye_right {
+  position: absolute;
+  bottom: 0;
+  width: 1vmax;
+  height: 0.9vmax;
+  border-radius: 50%;
+  background-color: #293b49;
+  animation-name: eye;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  right: 0;
+}
+
+@keyframes eye {
+  0% {
+    height: 0.8rem;
+  }
+  50% {
+    height: 0.8rem;
+  }
+  52% {
+    height: 0.1rem;
+  }
+  54% {
+    height: 0.8rem;
+  }
+  100% {
+    height: 0.8rem;
+  }
+}
+
+.rosyCheeks_rosyCheeks_left {
+  position: absolute;
+  top: 1.8vmax;
+  width: 1.2vmax;
+  height: 0.3vmax;
+  border-radius: 50%;
+  background-color: #fdabaf;
+  left: 1.5vmax;
+}
+
+.rosyCheeks_rosyCheeks_right {
+  position: absolute;
+  top: 1.8vmax;
+  width: 1.4vmax;
+  height: 0.3vmax;
+  border-radius: 50%;
+  background-color: #fdabaf;
+  right: 1.5vmax;
+}
+
+.mouth {
+  position: absolute;
+  top: 3.5vmax;
+  left: 50%;
+  width: 1.9vmax;
+  height: 0.2vmax;
+  border-radius: 0.1vmax;
+  transform: translateX(-50%);
+  background-color: #293b49;
+}
+
+.text {
+  margin-top: 5vmax;
+  font-weight: 300;
+  color: white;
+  opacity: 0.8;
+  font-size: 1.6vmax;
+}
+/* 
+.button {
+  margin-top: 4vmax;
+  padding: 1.2vmax 3vmax;
+  color: white;
+  background-color: #04cba0;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.button:hover {
+  color: whitesmoke;
+  opacity: 1;
+} */
+
+.button {
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 1.2vmax 3vmax;
+  margin-top: 4vmax;
+  font-weight: 700 !important;
+  background-color: whitesmoke;
+  opacity: 0.9;
+}
+.button:hover {
+  opacity: 0.6;
+  background-color: white;
+  color: black;
+}
+.button:focus {
+  outline: none;
+}
+
+.by {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  text-transform: uppercase;
+  color: #293b49;
+}
+
+.byLink {
+  color: #04cba0;
+}

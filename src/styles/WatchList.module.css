@@ -1,0 +1,28 @@
+.header {
+  margin-left: 2vmax;
+}
+
+.text {
+  text-decoration: underline;
+  text-underline-position: under;
+  font-size: 2.6vmax;
+  margin-bottom: 2.6vmax;
+  margin-left: 4.5%;
+  margin-top: 2vmax;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  font-size: 2vmax;
+}
+.choose {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.choose li {
+  margin-left: 2rem;
+}

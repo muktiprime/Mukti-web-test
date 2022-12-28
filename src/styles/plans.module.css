@@ -1,0 +1,148 @@
+.title {
+  color: black;
+  font-size: 20px;
+}
+
+.title_back {
+  text-align: center;
+  margin: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.price {
+  color: #343a40;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 0 !important;
+  line-height: 1.2 !important;
+  position: relative;
+}
+
+.rupee {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 27%;
+}
+.rupee_four {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 23%;
+}
+
+@media (max-width: 1000px) and (min-width: 420px) {
+  .price {
+    font-size: 2.5rem;
+  }
+  .rupee {
+    top: 6px;
+    left: 20%;
+  }
+  .rupee_four {
+    top: 6px;
+    left: 14%;
+  }
+}
+
+.monthly {
+  font-size: 20px;
+}
+.btn_section {
+  text-align: center;
+  margin: 15px;
+}
+.plan_btn {
+  color: white;
+  text-align: center;
+  width: 110px;
+  background-color: black;
+  padding: 4px 5px 4px 6px;
+  opacity: 1;
+  border: none;
+  border: 1px solid black;
+}
+
+.plan_btn:hover {
+  opacity: 0.8;
+}
+
+/* Updated Plans Design */
+
+.landing_page_plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4181c;
+}
+
+.planbox {
+  background-color: #f4181c;
+  display: flex;
+  color: #fff;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.planbox__header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(245, 240, 240, 0.58);
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.planbox .planbox__header__value__container {
+  display: flex;
+}
+
+.planbox__header__value .price {
+  font-size: 1.1em;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.planbox__header__cycle {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.planbox__details {
+  padding: 0 10px 10px;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.planbox__header__strike_through {
+  font-size: 1.1em;
+  font-weight: 800;
+  position: relative;
+  opacity: 0.8;
+  margin-right: 15px;
+}
+
+.planbox__header__strike_through::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-color: currentcolor #000 #000;
+  border-top-color: currentcolor;
+  border-top: 3px solid #000;
+  transform: rotate(-18deg);
+}
+
+/* SAMRAT EDIT */
+@media (max-width: 1200px) {
+  .planbox__header__cycle,
+  .planbox__details {
+    font-size: 14px;
+  }
+}

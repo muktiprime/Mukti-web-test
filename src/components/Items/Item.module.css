@@ -1,0 +1,105 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.card {
+  margin-top: 20px;
+  flex: 0 1 23%;
+  margin-bottom: 25px;
+  background-size: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .cards > div {
+    flex-basis: 49%;
+  }
+}
+
+@media (max-width: 320px) {
+  .cards > div {
+    flex-basis: 51%;
+  }
+}
+
+.item_img_1 {
+  width: 100%;
+  height: 190px;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .item_img_1 {
+    height: 100px;
+  }
+}
+
+.card .movie_title {
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  left: 10%;
+  color: white;
+  font-size: 1.5vmax;
+  visibility: hidden;
+}
+.card .movie_des {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 10%;
+  color: white;
+  font-size: 1vmax;
+  visibility: hidden;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .card .movie_des {
+    font-size: 2vw;
+    bottom: -8%;
+  }
+  .card .movie-title {
+    font-size: 4vw;
+  }
+  .cards {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+}
+
+/* New-code */
+
+.card {
+  transition: transform 500ms;
+}
+/* 
+.card:focus-within .item-img,
+.card:hover .item-img {
+  transform: translateX(-25%);
+}
+
+.item-img:focus ~ .item-img,
+.item-img:hover ~ .item-img {
+  transform: translateX(25%);
+} */
+
+.card:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.card:hover .item_img_1 {
+  opacity: 0.6;
+}
+
+.card:hover .movie_title,
+.card:hover .movie_des {
+  visibility: visible;
+  transition: opacity 0.62s, ease 500ms;
+  text-shadow: 1px 1px 2px black;
+}

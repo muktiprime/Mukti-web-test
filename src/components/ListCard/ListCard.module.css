@@ -1,0 +1,304 @@
+/* .title {
+  font-size: 2.5vmax;
+  margin: 20px;
+  color: white;
+} */
+
+.heading {
+  color: white;
+  display: flex;
+  margin-left: 5%;
+  font-size: 2vmax;
+  margin-top: 2%;
+}
+
+.mediaScreen {
+  z-index: 0;
+}
+
+/*------- Media-Screen -----*/
+
+.banner {
+  display: flex;
+  justify-content: inherit;
+  flex-wrap: wrap;
+  margin: 2% 5% 5% 5%;
+}
+
+.addIcon1 .tooltiptext {
+  visibility: hidden;
+  width: 110px;
+  background-color: #0f171e;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 90%;
+  font-size: 12px;
+  left: 80%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.addIcon1 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.addIcon1:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.mediaScreen {
+  margin-top: 5px;
+  z-index: 0;
+}
+
+.mediaDiv {
+  cursor: pointer;
+  padding: 10px 5px;
+  padding-top: 5px;
+  transition: ease-in-out;
+}
+
+.mediaDiv .displayhoverScreen {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  padding: 1px;
+  min-height: 400px;
+  transform: scale(1);
+}
+@media screen and (min-width: 800px) {
+  .mediaDiv:hover > .displayhoverScreen {
+    display: block;
+  }
+}
+
+.mediaImg {
+  height: 158px;
+  width: 280px;
+  object-fit: cover;
+  margin: 5px;
+  border-radius: 4px;
+  z-index: 0;
+  visibility: visible;
+  /* transition: 0.5s; */
+}
+
+.mediaDiv:hover {
+  padding: 0px;
+}
+.mediaDiv:hover .mediaImg {
+  height: 0px;
+  width: 300px;
+  /* visibility: hidden; */
+}
+.moreButton {
+  color: lightblue;
+  font-size: 14px;
+  margin-right: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.moreButton:hover {
+  color: white;
+}
+
+/* -------Hover-screen-------- */
+
+.mediaHoverImg {
+  height: 160px;
+  width: 300px;
+  margin-top: 10px;
+  border-radius: 0%;
+  z-index: 2;
+}
+.hoverScreen {
+  position: relative;
+  color: white;
+  width: 300px;
+  transform: scale(1.1);
+  transition-property: transform;
+  top: -30px;
+  opacity: 1;
+  z-index: 2;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.hoverData {
+  position: relative;
+  background: linear-gradient(rgba(27, 37, 48, 0), #1b2530 48px);
+  padding: 30px 30px;
+  padding-bottom: 5px;
+  margin-top: -45px;
+  z-index: 2;
+  text-decoration: none;
+}
+.playButton {
+  color: white;
+  transform: scale(1.3);
+}
+.playButton:hover {
+  color: #ee2828;
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+  outline: none;
+}
+.playtext {
+  text-decoration: none;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.playDiv {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 65px;
+}
+.playIcon {
+  width: 40px;
+}
+.addIcon {
+  color: white;
+}
+.hoverHeading {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+.overview {
+  margin-top: 5px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.releaseYear {
+  font-size: 11px;
+  color: gray;
+  margin-bottom: 15px;
+}
+.runTime {
+  color: darkgray;
+  font-size: 11px;
+}
+.footerScreen {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.messageIcon {
+  color: darkgray;
+  max-height: 20px;
+  margin-top: -3px;
+}
+.rated {
+  border: 1px solid darkgray;
+  color: darkgray;
+  font-size: 9px;
+  margin-top: 3px;
+  padding: 1px 5px 0 5px;
+  height: 19px;
+}
+
+@media (max-width: 1100px) {
+  .mediaImg {
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .mediaHoverImg {
+    width: 150px !important;
+  }
+  .mediaDiv {
+    padding: 0;
+  }
+  .mediaImg {
+    height: 100px !important;
+    width: 150px !important;
+
+    border-radius: 4px;
+    z-index: 0;
+    visibility: visible;
+  }
+  .mediaImg:hover {
+    opacity: 0.3;
+    border-radius: 2px !important;
+    height: 100px !important;
+    width: 150px !important;
+  }
+  .hoverData {
+    visibility: hidden;
+  }
+  .hoverScreen {
+    position: absolute !important;
+    color: white;
+    width: 300px;
+    transform: none !important;
+    height: 160px !important;
+    /* transition-property: transform; */
+    transition-delay: none !important;
+    transition-duration: 3s;
+
+    opacity: 1;
+    z-index: 1;
+    /* margin-bottom: 20px; */
+    text-decoration: none;
+  }
+
+  .mediaDiv .displayhoverScreen {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    padding: 1px;
+    height: 160px !important;
+    transform: scale(1);
+  }
+  .mediaHoverImg {
+    height: 160px;
+    width: 300px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    z-index: 5;
+  }
+}
+
+.mediaSection {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .mediaSection {
+    visibility: visible;
+    position: relative;
+    top: -16%;
+    left: 10%;
+    right: 0%;
+    color: white;
+    margin-bottom: -15px;
+  }
+  .iconRemove {
+    background-color: #415264;
+    border-radius: 50%;
+    font-size: 32px !important;
+    z-index: 30 !important;
+    padding: 5px;
+  }
+}

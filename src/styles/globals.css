@@ -1,0 +1,92 @@
+.collection-preview-title {
+  font-size: 1.4rem;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+
+code {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #c06;
+}
+body {
+  background-color: #0f171e;
+  font-family: Amazon Ember, Amazon Arabic Ember, Arial, sans-serif !important;
+}
+* {
+  box-sizing: border-box;
+}
+
+* {
+  outline: none;
+}
+a,
+a:visited,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+  outline: 0;
+}
+
+a {
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+h1 {
+  color: white;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+button.owl-next {
+  position: absolute !important;
+  font-size: 92px !important;
+  color: white !important;
+  top: -0px;
+  height: 0px;
+  margin: 0 !important;
+  right: 2px;
+  border: none;
+}
+button.owl-prev {
+  position: absolute !important;
+  font-size: 92px !important;
+  color: white !important;
+  top: -0px;
+  left: 0px;
+  margin: 0 !important;
+  height: 0px;
+}
+
+@media (max-width: 800px) {
+  button.owl-prev,
+  button.owl-next {
+    visibility: hidden;
+  }
+}
+
+/* Carousel-css */
+
+.carousel-control-prev {
+  width: 4.5%;
+  padding-left: 20px;
+}
+@media (max-width: 800px) {
+  .carousel-control-prev {
+    width: 15%;
+    padding-left: 2px;
+  }
+}

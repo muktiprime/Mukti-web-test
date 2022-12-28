@@ -1,0 +1,287 @@
+.headers {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}
+.autoSelect {
+  font-weight: 550;
+  margin-left: 15px;
+  color: gray;
+}
+.playIcon {
+  position: absolute;
+  left: 48%;
+  top: 45%;
+  font-size: 50px !important;
+  border-radius: 50%;
+  background-color: rgba(25, 26, 25, 0.274);
+  color: white;
+}
+.playIcon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.forwardIcon {
+  position: absolute;
+  right: 34%;
+  top: 43%;
+  font-size: 70px !important;
+  color: white;
+}
+
+.forwardIcon:hover {
+  color: #ffffff57;
+}
+
+.replayIcon {
+  position: absolute;
+  left: 34%;
+  top: 43%;
+  font-size: 70px !important;
+  color: white;
+}
+.replayIcon:hover {
+  color: rgba(128, 128, 128, 0.575);
+}
+.subIcon {
+  position: absolute;
+  right: 14%;
+  top: 2%;
+  font-size: 37px !important;
+  color: white;
+}
+
+.subIcon:hover {
+  color: rgba(128, 128, 128, 0.575);
+  cursor: pointer;
+}
+.settings {
+  position: absolute;
+  right: 12%;
+  top: 2%;
+  font-size: 37px !important;
+  color: white;
+}
+.settings:hover {
+  color: rgba(128, 128, 128, 0.575);
+  cursor: pointer;
+}
+
+.volume {
+  position: absolute;
+  right: 8.5%;
+  top: 2%;
+  font-size: 37px !important;
+  color: white;
+}
+.volume:hover {
+  color: rgba(128, 128, 128, 0.575);
+  cursor: pointer;
+}
+
+.fullscreen {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  font-size: 37px !important;
+  color: rgb(240, 224, 224);
+  background-color: #000;
+}
+.fullscreen:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.clearIco {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  font-size: 37px !important;
+  color: white;
+}
+.clearIco:hover {
+  color: rgba(128, 128, 128, 0.575);
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  font-size: 37px !important;
+  color: white;
+}
+.close:hover {
+  color: rgba(128, 128, 128, 0.575);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .playIcon {
+    position: absolute;
+    left: 44%;
+    top: 42%;
+    font-size: 50px !important;
+    border-radius: 50%;
+    background-color: rgba(96, 97, 96, 0.377);
+    color: white;
+  }
+  .playIcon:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .forwardIcon {
+    position: absolute;
+    right: 25%;
+    top: 40%;
+    font-size: 45px !important;
+    color: gray;
+  }
+
+  .forwardIcon:hover {
+    color: #ffffff57;
+  }
+
+  .replayIcon {
+    position: absolute;
+    left: 25%;
+    top: 43%;
+    font-size: 45px !important;
+    color: gray;
+  }
+  .replayIcon:hover {
+    color: rgba(128, 128, 128, 0.575);
+  }
+  .subIcon {
+    position: absolute;
+    right: 28%;
+    top: 2%;
+    font-size: 20px !important;
+    color: gray;
+  }
+
+  .subIcon:hover {
+    color: rgba(128, 128, 128, 0.575);
+    cursor: pointer;
+  }
+  .settings {
+    position: absolute;
+    right: 22%;
+    top: 2%;
+    font-size: 20px !important;
+    color: gray;
+  }
+  .settings:hover {
+    color: rgba(128, 128, 128, 0.575);
+    cursor: pointer;
+  }
+
+  .volume {
+    position: absolute;
+    right: 15%;
+    top: 2%;
+    font-size: 20px !important;
+    color: gray;
+  }
+  .volume:hover {
+    color: rgba(128, 128, 128, 0.575);
+    cursor: pointer;
+  }
+
+  .fullscreen {
+    position: absolute;
+    right: 9%;
+    top: 2%;
+    font-size: 20px !important;
+    color: gray;
+  }
+  .fullscreen:hover {
+    color: rgba(128, 128, 128, 0.575);
+    cursor: pointer;
+  }
+
+  .clearIco {
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    font-size: 20px !important;
+    color: gray;
+  }
+  .close {
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    font-size: 20px !important;
+    color: gray;
+  }
+  .close:hover {
+    color: rgba(128, 128, 128, 0.575);
+    cursor: pointer;
+  }
+}
+
+.guiBase {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .gui {
+    display: none;
+  }
+  .guiImg {
+    margin-top: 10%;
+    width: 100%;
+    padding: 20px;
+    height: 100px;
+  }
+  .guiBase {
+    display: block;
+  }
+  .guiText {
+    font-size: 20px;
+    color: white;
+    margin-top: 0%;
+    padding: 20px;
+  }
+}
+
+.videoInapp {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .videoInapp {
+    padding: 25px 15px;
+    text-align: center;
+    display: block;
+    border: 1px solid #646970;
+    margin: 10px;
+    border-radius: 10px;
+    padding-bottom: 0;
+  }
+  .videoInapp h1 {
+    font-size: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  .videoInapp div {
+    background: white;
+    padding: 10px;
+    margin-bottom: -30px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 5px #141d25;
+  }
+  .videoInapp img {
+    height: 40px;
+    margin: 0px 5px;
+  }
+}
+
+.reactPlayer > video {
+  width: 55vw;
+  height: min-content;
+}

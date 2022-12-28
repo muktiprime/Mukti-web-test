@@ -1,0 +1,62 @@
+.sidebar_area {
+  color: rgb(250, 0, 0);
+  margin-top: 4%;
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
+.bgUsr {
+  background-color: white;
+  width: 75%;
+
+  padding: 20px;
+  /* margin-top: 30px; */
+  height: auto;
+}
+.usr_fa_icon {
+  text-align: center;
+  font-size: 140px;
+  margin-top: -40px;
+  color: black;
+}
+.verifyUsr {
+  color: green;
+  font-size: 13px;
+
+  float: right;
+}
+.iconUsr {
+  font-size: 13px !important;
+}
+@media (max-width: 700px) {
+  .verifyUsr {
+    color: green;
+    font-size: 10px;
+
+    float: right;
+  }
+  .iconUsr {
+    font-size: 10px !important;
+  }
+  .sidebar_area {
+    margin-left: 0%;
+  }
+  .usr_fa_icon {
+    text-align: center;
+    font-size: 120px;
+    margin-top: -40px;
+
+    color: black;
+  }
+  .bgUsr {
+    background-color: white;
+    width: 100%;
+
+    padding: 20px;
+    height: auto;
+  }
+}
+.verifyBtn {
+  font-size: 12px;
+  margin-top: 10px;
+  float: right;
+}
