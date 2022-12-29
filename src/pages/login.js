@@ -44,7 +44,7 @@ export default function Login(props) {
   const [redirectUrl, setRedirectUrl] = useState("/");
   const [loader, setLoader] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-
+  const [device, setDevice] = useState();
   const [googleLoading, setGoogleLoading] = useState(false);
   const [facebookLoading, setFacebookLoading] = useState(false);
 
@@ -168,6 +168,7 @@ export default function Login(props) {
         },
       });
       const s_data = await s_response.data;
+      setDevice(s_data.status)
       setOtpInput(true)
       setLoader(false);
       setOtpInput(true)
@@ -251,6 +252,8 @@ export default function Login(props) {
     console.log("🚀 ~ file: login.js:247 ~ VerifyOtp ~ response", response, "-=-=-=-=", response.status)
 
     const responseJson = await response.json();
+
+    let devices = device;
 
     if (response.status === 200) {
       console.log("logged in successfully", response.status, responseJson);
