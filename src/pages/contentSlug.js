@@ -74,7 +74,7 @@ export default function ContentSlug(props) {
   const [active, setActive] = useState(0);
   const [showSliderPlayer, setSliderPlayer] = useState(false);
   const [content_data, setContentData] = useState({});
-  console.log("🚀 ~ file: contentSlug.js:77 ~ ContentSlug ~ content_data", content_data)
+
   const [loading, setLoading] = useState(true);
   const [token, setToken] = useState();
   const [islog, setIsLog] = useState(false);
@@ -95,7 +95,6 @@ export default function ContentSlug(props) {
       setLoading(true);
       const url = `${api_url}/content/${videotype}/${props.match.params.content_slug}/`;
       const res = await fetch(url);
-      console.log("🚀 ~ file: contentSlug.js:97 ~ fetchContent ~ url", url)
       if (res.status === 200) {
         const data = await res.json();
         setContentData(data);
@@ -233,7 +232,7 @@ export default function ContentSlug(props) {
                       </button>
                     </Link>
                   ) : (
-                    <Link to={`/player/${videotype}/${content_data.slug}`}>
+                    <Link to={`/player/${videotype}/${movieLink}`}>
                       <button className="btn btn-primary radius-none">
                         <PlayArrowIcon /> Play Now
                       </button>
