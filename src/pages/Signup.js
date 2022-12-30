@@ -80,7 +80,7 @@ function Signup() {
     setFormData({ ...formData, ...errors });
     var data = {
       full_name: formData.full_name,
-      email: formData.email || "test123@gmail.com",
+      email: formData.email || "nomail@gmail.com",
       country_code: 91,
       password: "123456",
     };

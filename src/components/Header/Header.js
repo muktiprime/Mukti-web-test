@@ -42,28 +42,29 @@ export default function Header(props) {
     router.push(`/search`);
   };
   const handleLogout = async () => {
-    
+
     // console.log(userData);
     let user_id = localStorage.getItem("mobile");
     // console.log(user_id);
-    const s_response = await axios.get(`${API_HOST_URL}/devb/ajax/login/`+user_id+`/delete`, {
+    const s_response = await axios.get(`${API_HOST_URL}/devb/ajax/login/` + user_id + `/delete`, {
       headers: {
         "Content-Type": "application/json",
       },
     });
     const s_data = await s_response;
     // console.log(s_data.data.status);
-    if(s_data.data.status === 1 || s_data.data.status === 0){
+    if (s_data.data.status === 1 || s_data.data.status === 0) {
       localStorage.removeItem("loginToken");
       localStorage.removeItem("user");
       localStorage.removeItem("mobile");
       setCookies("");
-      router.push("/login");
+      router.push("/");
+      window.location.reload()
     }
   }
   return (
     <>
-      <LiveChat/>
+      <LiveChat />
       <div className={headerStyles.header}>
         <div className={headerStyles.responsiveProfileSection}>
           {/* Mobile User Drop Down Menu */}
@@ -138,7 +139,7 @@ export default function Header(props) {
             <div className={headerStyles.container_1}>
               <div className={headerStyles.container_2}>
                 {window.location.pathname !== "/signup" &&
-                window.location.pathname !== "/login" ? (
+                  window.location.pathname !== "/login" ? (
                   <>
                     <span className={headerStyles.searchIcon}>
                       <IoSearch />
@@ -184,19 +185,19 @@ export default function Header(props) {
               {isloggedin ? (
                 <Link to="/account/user-account">My Account</Link>
               ) : null}
-              {isloggedin ? <Link to="/watchlist">Watchlist</Link> : null}
+
 
               <Link
-              onClick={handleLogout}
-                // onClick={() => {
-                //   const token = await JSON.parse(localStorage.getItem("loginToken"));
-                //   console.log(token);
-                //   // localStorage.removeItem("loginToken");
-                //   // localStorage.removeItem("user");
-                //   // setCookies("");
+                onClick={handleLogout}
+              // onClick={() => {
+              //   const token = await JSON.parse(localStorage.getItem("loginToken"));
+              //   console.log(token);
+              //   // localStorage.removeItem("loginToken");
+              //   // localStorage.removeItem("user");
+              //   // setCookies("");
 
-                //   router.push("/login");
-                // }}
+              //   router.push("/login");
+              // }}
               >
                 {loginCheck() ? "Logout" : "Login"}
               </Link>
@@ -205,9 +206,10 @@ export default function Header(props) {
                 {isloggedin ? (
                   <Link to="/account/active-plan">My Plan</Link>
                 ) : null}
-                {isloggedin ? (
+                {/* {isloggedin ? (
                   <Link to="/account/change-password">Change Password</Link>
-                ) : null}
+                ) : null} */}
+                {isloggedin ? <Link to="/watchlist">Watchlist</Link> : null}
                 {isloggedin ? <Link to="/contact-us">Support</Link> : null}
               </div>
             </div>
@@ -288,7 +290,7 @@ export default function Header(props) {
                     {!isloggedin ? <Link to="/login">Login</Link> : null}
                     {isloggedin ? (
                       <Link
-                      onClick={handleLogout}
+                        onClick={handleLogout}
                       >
                         Logout
                       </Link>

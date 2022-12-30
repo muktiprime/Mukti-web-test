@@ -335,7 +335,8 @@ const Player = (props) => {
 
     try {
       if (contentType === "shows") {
-        const videoResponse = await fetch(
+        
+      const videoResponse = await fetch(
           `${API_HOST_URL}/v1/content/${contentType}/video/${contentSlug}/app`,
           {
             headers: {
@@ -344,8 +345,7 @@ const Player = (props) => {
               Authorization: `Bearer ${token.access}`,
             },
           }
-        );
-        if (videoResponse.status === 403) {
+        );  if (videoResponse.status === 403) {
           Swal.fire({
             title: "Family Protection!",
             text: "If you want to watch this video disable Family Protection!",

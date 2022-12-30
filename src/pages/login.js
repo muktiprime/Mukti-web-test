@@ -480,12 +480,12 @@ export default function Login(props) {
                 className={signinStyles.user_forgot}
                 style={{ marginTop: "20px" }}
               >
-                <Link
+                {/* <Link
                   to="/forgot-password"
                   className={signinStyles.forgot_password}
                 >
                   Forgot Password?
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
